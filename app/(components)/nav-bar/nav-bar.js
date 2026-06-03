@@ -15,11 +15,16 @@ const NavBar = () => {
   const handleClick = () => {
     setToggle((prev) => !prev);
   };
+  const basePath = process.env.NODE_ENV === "production" ? "/FUTURE_FS_3" : "";
 
   return (
     <nav className={toggle ? "active" : "inactive"}>
       <div className="logo-container">
-        <Image alt="Dream CreationZ logo" src="/images/Logo.jpg" fill />
+        <Image
+          alt="Dream CreationZ logo"
+          src={`${basePath}/images/Logo.jpg`}
+          fill
+        />
       </div>
       <button className="menu-button" onClick={handleClick}>
         <MdMenuOpen />

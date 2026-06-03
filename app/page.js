@@ -41,6 +41,7 @@ const Hero = () => {
   );
 };
 const Events = () => {
+  const basePath = process.env.NODE_ENV === "production" ? "/FUTURE_FS_3" : "";
   return (
     <section className="section-container">
       <h1>Popular Events</h1>
@@ -50,25 +51,41 @@ const Events = () => {
       <div className="box-container">
         <div className="box">
           <div className="image-container">
-            <Image src="/images/Cake14.jpeg" fill alt="A birthday cake" />
+            <Image
+              src={`${basePath}/images/Cake14.jpeg`}
+              fill
+              alt="A birthday cake"
+            />
           </div>
           <span>Birthdays</span>
         </div>
         <div className="box">
           <div className="image-container">
-            <Image src="/images/Cake8.jpeg" fill alt="A birthday cake" />
+            <Image
+              src={`${basePath}/images/Cake8.jpeg`}
+              fill
+              alt="A birthday cake"
+            />
           </div>
           <span>Weddings</span>
         </div>
         <div className="box">
           <div className="image-container">
-            <Image src="/images/Cake12.jpeg" fill alt="A birthday cake" />
+            <Image
+              src={`${basePath}/images/Cake12.jpeg`}
+              fill
+              alt="A birthday cake"
+            />
           </div>
           <span>Gender Reveals</span>
         </div>
         <div className="box">
           <div className="image-container">
-            <Image src="/images/Cake20.jpeg" fill alt="A birthday cake" />
+            <Image
+              src={`${basePath}/images/Cake20.jpeg`}
+              fill
+              alt="A birthday cake"
+            />
           </div>
           <span>Baptism</span>
         </div>
@@ -77,6 +94,7 @@ const Events = () => {
   );
 };
 const Pastries = () => {
+  const basePath = process.env.NODE_ENV === "production" ? "/FUTURE_FS_3" : "";
   return (
     <section className="pastery-section">
       <h1>Popular Pastries</h1>
@@ -85,7 +103,7 @@ const Pastries = () => {
       </p>
       <div className="box-container">
         <div className="image-container">
-          <Image src="/images/Cake4.jpeg" fill alt="Pastery" />
+          <Image src={`${basePath}/images/Cake4.jpeg`} fill alt="Pastery" />
         </div>
         <div className="info">
           <h1>
@@ -112,12 +130,12 @@ const Pastries = () => {
           <Link href="/gallery">View More</Link>
         </div>
         <div className="image-container">
-          <Image src="/images/Milktart1.jpeg" fill alt="Pastery" />
+          <Image src={`${basePath}/images/Milktart1.jpeg`} fill alt="Pastery" />
         </div>
       </div>
       <div className="box-container">
         <div className="image-container">
-          <Image src="/images/Donuts1.jpeg" fill alt="Pastery" />
+          <Image src={`${basePath}/images/Donuts1.jpeg`} fill alt="Pastery" />
         </div>
         <div className="info">
           <h1>
@@ -146,7 +164,7 @@ const Pastries = () => {
           <Link href="/gallery">View More</Link>
         </div>
         <div className="image-container">
-          <Image src="/images/Cupcakes2.jpeg" fill alt="Pastery" />
+          <Image src={`${basePath}/images/Cupcakes2.jpeg`} fill alt="Pastery" />
         </div>
       </div>
     </section>

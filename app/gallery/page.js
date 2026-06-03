@@ -3,6 +3,8 @@ import "./page.css";
 import Image from "next/image";
 
 const page = () => {
+  const basePath = process.env.NODE_ENV === "production" ? "/FUTURE_FS_3" : "";
+
   return (
     <>
       <section className="cake">
@@ -15,117 +17,209 @@ const page = () => {
         <div className="image-container">
           <div className="box-container">
             <div className="box">
-              <Image src="/images/Cak6.jpeg" alt="Cake image" fill />
+              <Image
+                src={`${basePath}/images/Cak6.jpeg`}
+                alt="Cake image"
+                fill
+              />
             </div>
           </div>
           <div className="box-container">
             <div className="box">
-              <Image src="/images/Image2.jpg" alt="Cake image" fill />
+              <Image
+                src={`${basePath}/images/Image2.jpg`}
+                alt="Cake image"
+                fill
+              />
             </div>
           </div>
           <div className="box-container">
             <div className="box">
-              <Image src="/images/Image4.jpg" alt="Cake image" fill />
+              <Image
+                src={`${basePath}/images/Image4.jpg`}
+                alt="Cake image"
+                fill
+              />
             </div>
           </div>
           <div className="box-container">
             <div className="box">
-              <Image src="/images/Image6.jpg" alt="Cake image" fill />
+              <Image
+                src={`${basePath}/images/Image6.jpg`}
+                alt="Cake image"
+                fill
+              />
             </div>
           </div>
           <div className="box-container">
             <div className="box">
-              <Image src="/images/Image5.jpg" alt="Cake image" fill />
+              <Image
+                src={`${basePath}/images/Image5.jpg`}
+                alt="Cake image"
+                fill
+              />
             </div>
           </div>
           <div className="box-container">
             <div className="box">
-              <Image src="/images/Cak6.jpeg" alt="Cake image" fill />
+              <Image
+                src={`${basePath}/images/Cak6.jpeg`}
+                alt="Cake image"
+                fill
+              />
             </div>
           </div>
           <div className="box-container">
             <div className="box">
-              <Image src="/images/Cake5.jpeg" alt="Cake image" fill />
+              <Image
+                src={`${basePath}/images/Cake5.jpeg`}
+                alt="Cake image"
+                fill
+              />
             </div>
           </div>
           <div className="box-container">
             <div className="box">
-              <Image src="/images/Cake7.jpeg" alt="Cake image" fill />
+              <Image
+                src={`${basePath}/images/Cake7.jpeg`}
+                alt="Cake image"
+                fill
+              />
             </div>
           </div>
           <div className="box-container">
             <div className="box">
-              <Image src="/images/Cake9.jpeg" alt="Cake image" fill />
+              <Image
+                src={`${basePath}/images/Cake9.jpeg`}
+                alt="Cake image"
+                fill
+              />
             </div>
           </div>
           <div className="box-container">
             <div className="box">
-              <Image src="/images/Cake11.jpeg" alt="Cake image" fill />
+              <Image
+                src={`${basePath}/images/Cake11.jpeg`}
+                alt="Cake image"
+                fill
+              />
             </div>
           </div>
           <div className="box-container">
             <div className="box">
-              <Image src="/images/Cake12.jpeg" alt="Cake image" fill />
+              <Image
+                src={`${basePath}/images/Cake12.jpeg`}
+                alt="Cake image"
+                fill
+              />
             </div>
           </div>
           <div className="box-container">
             <div className="box">
-              <Image src="/images/Cake16.jpeg" alt="Cake image" fill />
+              <Image
+                src={`${basePath}/images/Cake16.jpeg`}
+                alt="Cake image"
+                fill
+              />
             </div>
           </div>
           <div className="box-container">
             <div className="box">
-              <Image src="/images/Cake18.jpeg" alt="Cake image" fill />
+              <Image
+                src={`${basePath}/images/Cake18.jpeg`}
+                alt="Cake image"
+                fill
+              />
             </div>
           </div>
           <div className="box-container">
             <div className="box">
-              <Image src="/images/Cake21.jpeg" alt="Cake image" fill />
+              <Image
+                src={`${basePath}/images/Cake21.jpeg`}
+                alt="Cake image"
+                fill
+              />
             </div>
           </div>
           <div className="box-container">
             <div className="box">
-              <Image src="/images/Cake22.jpeg" alt="Cake image" fill />
+              <Image
+                src={`${basePath}/images/Cake22.jpeg`}
+                alt="Cake image"
+                fill
+              />
             </div>
           </div>
           <div className="box-container">
             <div className="box">
-              <Image src="/images/Cake23.jpeg" alt="Cake image" fill />
+              <Image
+                src={`${basePath}/images/Cake23.jpeg`}
+                alt="Cake image"
+                fill
+              />
             </div>
           </div>
           <div className="box-container">
             <div className="box">
-              <Image src="/images/Cake4.jpeg" alt="Cake image" fill />
+              <Image
+                src={`${basePath}/images/Cake4.jpeg`}
+                alt="Cake image"
+                fill
+              />
             </div>
           </div>
           <div className="box-container">
             <div className="box">
-              <Image src="/images/resized/Cake4.jpg" alt="Cake image" fill />
+              <Image
+                src={`${basePath}/images/resized/Cake4.jpg`}
+                alt="Cake image"
+                fill
+              />
             </div>
           </div>
           <div className="box-container">
             <div className="box">
-              <Image src="/images/Cake8.jpeg" alt="Cake image" fill />
+              <Image
+                src={`${basePath}/images/Cake8.jpeg`}
+                alt="Cake image"
+                fill
+              />
             </div>
           </div>
           <div className="box-container">
             <div className="box">
-              <Image src="/images/Cake13.jpeg" alt="Cake image" fill />
+              <Image
+                src={`${basePath}/images/Cake13.jpeg`}
+                alt="Cake image"
+                fill
+              />
             </div>
           </div>
           <div className="box-container">
             <div className="box">
-              <Image src="/images/Cake14.jpeg" alt="Cake image" fill />
+              <Image
+                src={`${basePath}/images/Cake14.jpeg`}
+                alt="Cake image"
+                fill
+              />
             </div>
           </div>
           <div className="box-container">
             <div className="box">
-              <Image src="/images/Cake20.jpeg" alt="Cake image" fill />
+              <Image
+                src={`${basePath}/images/Cake20.jpeg`}
+                alt="Cake image"
+                fill
+              />
             </div>
           </div>
           <div className="box-container">
             <div className="box">
-              <Image src="/images/resized/Cake1.jpg" alt="Cake image" fill />
+              <Image
+                src={`${basePath}/images/resized/Cake1.jpg`}
+                alt="Cake image"
+                fill
+              />
             </div>
           </div>
         </div>
@@ -140,17 +234,29 @@ const page = () => {
         <div className="image-container">
           <div className="box-container">
             <div className="box">
-              <Image src="/images/Cake17.jpeg" alt="Cupcakes" fill />
+              <Image
+                src={`${basePath}/images/Cake17.jpeg`}
+                alt="Cupcakes"
+                fill
+              />
             </div>
           </div>
           <div className="box-container">
             <div className="box">
-              <Image src="/images/Cupcakes2.jpeg" alt="Cupcakes" fill />
+              <Image
+                src={`${basePath}/images/Cupcakes2.jpeg`}
+                alt="Cupcakes"
+                fill
+              />
             </div>
           </div>
           <div className="box-container">
             <div className="box">
-              <Image src="/images/PinkCupCakes.jpeg" alt="Cupcakes" fill />
+              <Image
+                src={`${basePath}/images/PinkCupCakes.jpeg`}
+                alt="Cupcakes"
+                fill
+              />
             </div>
           </div>
         </div>
@@ -165,7 +271,11 @@ const page = () => {
         <div className="image-container">
           <div className="box-container">
             <div className="box">
-              <Image src="/images/Donuts1.jpeg" alt="Dougnuts" fill />
+              <Image
+                src={`${basePath}/images/Donuts1.jpeg`}
+                alt="Dougnuts"
+                fill
+              />
             </div>
           </div>
         </div>
@@ -180,12 +290,16 @@ const page = () => {
         <div className="image-container">
           <div className="box-container">
             <div className="box">
-              <Image src="/images/Quich.jpeg" alt="Quiche" fill />
+              <Image src={`${basePath}/images/Quich.jpeg`} alt="Quiche" fill />
             </div>
           </div>
           <div className="box-container">
             <div className="box">
-              <Image src="/images/Milktart1.jpeg" alt="Milktart" fill />
+              <Image
+                src={`${basePath}/images/Milktart1.jpeg`}
+                alt="Milktart"
+                fill
+              />
             </div>
           </div>
         </div>
