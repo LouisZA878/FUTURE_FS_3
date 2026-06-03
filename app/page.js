@@ -31,7 +31,7 @@ const Hero = () => {
       </div>
       <div className="image-container">
         <Image
-          src={`/${basePath}/images/resized/Cake1.jpg`}
+          src={`${basePath}/images/resized/Cake1.jpg`}
           fill
           alt="The hero sections cake image"
           priority
