@@ -1,0 +1,27 @@
+.image-container {
+  padding: 12px var(--big-indent);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.box-container {
+  background-color: var(--bg);
+  height: 450px;
+  width: 375px;
+  padding: var(--medium-padding);
+  border-radius: 8px;
+}
+
+.box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 4px;
+}
+img {
+  object-fit: cover;
+}
