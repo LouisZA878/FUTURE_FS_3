@@ -4,6 +4,7 @@ const nextConfig = {
   output: "export",
   images: { unoptimized: true },
   basePath: "/FUTURE_FS_3",
+  assetPrefix: "/FUTURE_FS_3",
 };
 
 export default nextConfig;
