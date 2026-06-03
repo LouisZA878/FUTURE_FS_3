@@ -6,6 +6,8 @@ import Link from "next/link";
 import { FaFacebookSquare } from "react-icons/fa";
 
 const Hero = () => {
+  const basePath = process.env.NODE_ENV === "production" ? "/FUTURE_FS_3" : "";
+
   return (
     <header>
       <div className="info">
@@ -29,7 +31,7 @@ const Hero = () => {
       </div>
       <div className="image-container">
         <Image
-          src="/images/resized/Cake1.jpg"
+          src={`/${basePath}/images/resized/Cake1.jpg`}
           fill
           alt="The hero sections cake image"
           priority
