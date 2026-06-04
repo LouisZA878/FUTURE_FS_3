@@ -25,3 +25,30 @@
 img {
   object-fit: cover;
 }
+
+.gallery-nav {
+  position: sticky;
+  top: 0;
+  z-index: 6;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: var(--bg-light);
+  padding: 0 var(--big-indent);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 40px;
+  gap: 12px;
+}
+.gallery-nav a {
+  text-decoration: none;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: var(--font-body);
+}
+
+section {
+  scroll-margin-top: 40px;
+}

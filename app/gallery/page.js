@@ -1,13 +1,20 @@
 import "./page.css";
 
 import Image from "next/image";
+import Link from "next/link";
 
 const page = () => {
   const basePath = process.env.NODE_ENV === "production" ? "/FUTURE_FS_3" : "";
 
   return (
     <>
-      <section className="cake">
+      <article className="gallery-nav">
+        <Link href="#cake">Cake</Link>
+        <Link href="#cupcakes">Cupcakes</Link>
+        <Link href="#doughnuts">Doughnuts</Link>
+        <Link href="#other">Other</Link>
+      </article>
+      <section className="cake" id="cake">
         <h1>
           Ca<span>kes</span>
         </h1>
@@ -46,15 +53,6 @@ const page = () => {
             <div className="box">
               <Image
                 src={`${basePath}/images/Image6.jpg`}
-                alt="Cake image"
-                fill
-              />
-            </div>
-          </div>
-          <div className="box-container">
-            <div className="box">
-              <Image
-                src={`${basePath}/images/Image5.jpg`}
                 alt="Cake image"
                 fill
               />
@@ -224,7 +222,7 @@ const page = () => {
           </div>
         </div>
       </section>
-      <section className="cupcakes">
+      <section className="cupcakes" id="cupcakes">
         <h1>
           Cupca<span>kes</span>
         </h1>
@@ -261,7 +259,7 @@ const page = () => {
           </div>
         </div>
       </section>
-      <section className="doughnuts">
+      <section className="doughnuts" id="doughnuts">
         <h1>
           Dough<span>nuts</span>
         </h1>
@@ -280,7 +278,7 @@ const page = () => {
           </div>
         </div>
       </section>
-      <section className="pasteries">
+      <section className="pasteries" id="other">
         <h1>
           Other <span>Pasteries</span>
         </h1>

@@ -68,6 +68,18 @@ header .image-container {
   width: 350px;
   height: 535px;
 }
+header .location span {
+  font-size: 0.8rem;
+}
+header .location svg {
+  font-size: 1.2rem;
+}
+header .location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 8px 0 0 0;
+}
 
 .section-container .box-container {
   padding: var(--big-padding);

@@ -3,6 +3,7 @@ import Image from "next/image";
 import "./(components)/page.css";
 import Link from "next/link";
 
+import { CiLocationOn } from "react-icons/ci";
 import { FaFacebookSquare } from "react-icons/fa";
 
 const Hero = () => {
@@ -22,6 +23,9 @@ const Hero = () => {
             <b> Bite </b>
           </span>
           away.
+        </p>
+        <p className="location">
+          <CiLocationOn /> <span>26 Protea Laan - Riviersonderend</span>
         </p>
         <div className="socials">
           <Link href="https://www.facebook.com/p/Dream-Creationz-100054555875108/">
