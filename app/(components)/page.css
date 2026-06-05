@@ -9,6 +9,9 @@ header .info {
   width: 550px;
   height: 455px;
 }
+header .info .description span {
+  font-weight: 800;
+}
 header .info p {
   font-family: var(--font-body);
   color: var(--text-muted);
@@ -78,7 +81,7 @@ header .location {
   display: flex;
   align-items: center;
   gap: 6px;
-  margin: 8px 0 0 0;
+  margin: -8px 0 16px 0;
 }
 
 .section-container .box-container {
@@ -123,12 +126,13 @@ header .location {
 }
 
 .pastery-section {
-  padding: 0 var(--big-indent);
+  padding: var(--big-padding) var(--big-indent);
 }
 .pastery-section .box-container {
   margin: 16px 0 0 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 12px;
 }
 .pastery-section .box-container .info {
   width: 350px;

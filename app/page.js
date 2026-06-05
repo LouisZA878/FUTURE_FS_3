@@ -16,17 +16,30 @@ const Hero = () => {
         <h1>
           Dream <span>CreationZ</span>
         </h1>
-        <p>
+        {/* <p>
           The cake of your dreams is <br />
           one
           <span>
             <b> Bite </b>
           </span>
           away.
-        </p>
+        </p> */}
         <p className="location">
           <CiLocationOn /> <span>26 Protea Laan - Riviersonderend</span>
         </p>
+        <p className="description">
+          Thinking of having something intimate or an extravagant gathering? I
+          have a <span>Cake</span> for that!
+          <br />
+          <br />
+          From <span>Gender Reveals</span> to <span>Wedding Cakes</span>, to
+          something a little bit more
+          <span> Celebratory</span>, I'll be with you all the way. A cake is not
+          just a cake. It becomes a form of endearment where we become part of
+          the family. That is why I take pride in baking and decorating because
+          it is my connection to you.
+        </p>
+
         <div className="socials">
           <Link href="https://www.facebook.com/p/Dream-Creationz-100054555875108/">
             <FaFacebookSquare style={{ color: "blue" }} />{" "}
@@ -48,7 +61,9 @@ const Events = () => {
   const basePath = process.env.NODE_ENV === "production" ? "/FUTURE_FS_3" : "";
   return (
     <section className="section-container">
-      <h1>Popular Events</h1>
+      <h1>
+        Crafted for<span> Every Occasion</span>
+      </h1>
       <p>
         Why not join in on the <span>Fun</span>?
       </p>
@@ -68,7 +83,7 @@ const Events = () => {
             <Image
               src={`${basePath}/images/Cake8.jpeg`}
               fill
-              alt="A birthday cake"
+              alt="A wedding cake"
             />
           </div>
           <span>Weddings</span>
@@ -78,7 +93,7 @@ const Events = () => {
             <Image
               src={`${basePath}/images/Cake12.jpeg`}
               fill
-              alt="A birthday cake"
+              alt="A gender real cake"
             />
           </div>
           <span>Gender Reveals</span>
@@ -86,9 +101,10 @@ const Events = () => {
         <div className="box">
           <div className="image-container">
             <Image
-              src={`${basePath}/images/Cake20.jpeg`}
+              style={{ objectFit: "cover" }}
+              src={`${basePath}/images/Cake55.jpeg`}
               fill
-              alt="A birthday cake"
+              alt="A celebratory baptism cake"
             />
           </div>
           <span>Baptism</span>
@@ -101,7 +117,11 @@ const Pastries = () => {
   const basePath = process.env.NODE_ENV === "production" ? "/FUTURE_FS_3" : "";
   return (
     <section className="pastery-section">
-      <h1>Popular Pastries</h1>
+      <h1>
+        Designed for
+        <span> Your </span>
+        Day
+      </h1>
       <p>
         Can't help but <span>Love</span> them.
       </p>
@@ -111,18 +131,46 @@ const Pastries = () => {
         </div>
         <div className="info">
           <h1>
-            <span>Custom</span> Birthday Cakes
+            <span>Custom</span> Cakes
           </h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            Every cake is freshly made & decorated to your wishes and needs. If
+            you have an idea or example, we can work it to fit your taste.
           </p>
-          <Link href="/gallery">View More</Link>
+          <Link href="/gallery#cakes">View More</Link>
         </div>
       </div>
       <div className="box-container">
+        <div className="info">
+          <h1>
+            <span>Velvet</span> Can't Be This Good
+          </h1>
+          <p>
+            A variety of cakes theres a variety of colours, this includes from
+            green to red, and all of them are delicious
+          </p>
+          <Link href="/gallery#cakes">View More</Link>
+        </div>
+        <div className="image-container">
+          <Image src={`${basePath}/images/Cake5.jpeg`} fill alt="Pastery" />
+        </div>
+      </div>
+      <div className="box-container">
+        <div className="image-container">
+          <Image src={`${basePath}/images/Image4.jpg`} fill alt="Pastery" />
+        </div>
+        <div className="info">
+          <h1>
+            <span>Dinasours</span> Will Never Be Out Of Fashion
+          </h1>
+          <p>
+            It might be dangerous, it might be fearsome, or it might make your
+            day.
+          </p>
+          <Link href="/gallery#cakes">View More</Link>
+        </div>
+      </div>
+      {/* <div className="box-container">
         <div className="info">
           <h1>Milktart</h1>
           <p>
@@ -170,7 +218,7 @@ const Pastries = () => {
         <div className="image-container">
           <Image src={`${basePath}/images/Cupcakes2.jpeg`} fill alt="Pastery" />
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };
@@ -230,11 +278,12 @@ const Reviews = () => {
             <FullStar />
             <FullStar />
             <FullStar />
-            <HalfStar />
+            <FullStar />
           </div>
           <p>
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum
+            The most beautiful cakes ever. The icing was unbelievably delicious.
+            You made a little boy's heart very happy. You're really good at what
+            you do.
           </p>
         </div>
         <div className="box">
@@ -246,8 +295,9 @@ const Reviews = () => {
             <FullStar />
           </div>
           <p>
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum
+            A creative masterpiece by non other than
+            <span> Dream CreationZ</span>! The cake and brilliantly decorated
+            was tasted phenomenal.
           </p>
         </div>
         <div className="box">
@@ -258,10 +308,7 @@ const Reviews = () => {
             <FullStar />
             <HalfStar />
           </div>
-          <p>
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum
-          </p>
+          <p>Another great surprise from the magic woman herself.</p>
         </div>
       </div>
     </section>
@@ -272,8 +319,8 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Events />
       <Pastries />
+      <Events />
       <Reviews />
     </>
   );
