@@ -36,9 +36,6 @@ const NavBar = () => {
         <Link href="/gallery" className="inactive">
           Gallery
         </Link>
-        <Link href="/about" className="inactive">
-          About
-        </Link>
       </ul>
     </nav>
   );
